@@ -1,0 +1,323 @@
+*, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary :#274397;
+    --bg-secondary : #087bff;
+    --txt-primary : #FFFFFF
+}
+
+body {
+    /* width: 100%; */
+    /* height: 100vh; */
+    background-color: var(--bg-secondary);
+}
+
+header {
+    width: 100%;
+    /* height: 10vh; */
+}
+
+.promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);  
+    padding: 10px;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+.promo a {
+    color: var(--txt-primary);
+}
+.promo:hover {
+    background-color: #122049;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 2.5%;
+    cursor: pointer;
+}
+
+.nav-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-right: 5%;
+}
+
+.nav-btn button{
+    font-size: 17px;
+    /* padding-right: 20px; */
+    /* padding-left: 20px; */
+    background-color: var(--bg-secondary);
+    color: var(--txt-primary);
+    border: none;
+    cursor: pointer;
+}
+.nav-btn button:hover {
+    color: rgb(219, 217, 217);
+}
+
+.login-btn {
+    margin-right: 5%;
+    margin-left: -30px;
+    padding: 13px 18px;
+    background-color: var(--bg-secondary);
+    color: var(--txt-primary);
+    border: white solid 1px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login-btn:hover {
+    color: rgb(219, 217, 217);
+    border-color: rgb(219, 217, 217);
+}
+
+.container-fitur {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.fitur {
+    color: var(--txt-primary);
+    margin: 5% 3.5%;
+}
+.fitur h3 {
+    font-size: 1.3em;
+    margin-bottom: 4%;
+}
+.fitur h1 {
+    font-size: 2.2em;
+    font-weight: bolder;
+}
+
+.fitur-user {
+    font-size: 1.1rem;
+    margin: 2.5% 0;
+    line-height: 1.5;
+}
+.fitur-user img {
+    margin-right: 2%;
+}
+
+.fitur-price {
+    font-size: 2rem;
+}
+.fitur-span {
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+.fitur h4 {
+    font-size: 1.3em;
+    margin-top: 0.5%;
+}
+
+.box {
+    margin: 2.5% 0;
+    display: flex;
+    gap: 5px;
+}
+
+.box1 {
+    background-color: rgb(0, 140, 255);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.box2 {
+    background-color: rgb(0, 140, 255);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.box3 {
+    background-color: rgb(0, 140, 255);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.box4 {
+    background-color: rgb(0, 140, 255);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 5px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.dot {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}
+
+.buy-btn-1 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 50px;
+    color: var(--txt-primary);
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buy-btn-1:hover {
+    background-color: rgb(184, 119, 0);
+    transition: 0.5s ease-out all;
+}
+
+.warranty {
+    font-size: 1.1rem;
+    margin: 1.5% 0;
+    display: flex;
+    gap: 3px;
+    margin-top: 12px;
+}
+
+.img-section {
+    float: right;
+    margin-right: 4%;
+    width: max-content;
+}
+
+#menu1 {
+    display: none;
+}
+
+@media screen and (max-width : 1024px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        margin-right: 0;
+    }
+    
+    #closeToggle {
+        display: none;
+    }
+
+    .burger-menu {
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 18px;
+    }
+
+    .burger-menu span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: var(--txt-primary);
+        border-radius: 3px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+    .login-btn  {
+        display: none;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+        background-color: var(--txt-primary);
+        color: var(--bg-secondary);
+    }
+    .container-fitur {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fitur {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fitur-user {
+        width: 70%;
+        text-align: center;
+    }
+
+    .fitur h1 {
+        font-size: 1.6em;
+    }
+
+    .fitur h3 {
+        font-size: 1.2em;
+        /* margin-bottom: 5%; */
+    }
+
+    .img-section {
+        width: 80%;
+        order: 2;
+    }
+
+    #menu1 {
+        height: 100vh;
+        width: 100%;
+        background-color: var(--bg-secondary);
+    }
+
+    #menu2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+
+    #menu2 button {
+        font-size: larger;
+        border: none;
+        background-color: var(--bg-secondary);
+        color: var(--txt-primary);
+    }
+}
